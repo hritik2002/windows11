@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.startmenu_toggle{
+    display: none;
+}
+.taskbar{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.644);
+}
+.icons{
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    /* background: green; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* background: #000; */
+}
+#menu{
+    background-image: url('./favicon.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    cursor: pointer;
+}
+#edge{
+    background-image: url('./edgeicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    cursor: pointer;
+}
+#chrome{
+    background-image: url('./chromeicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 43px;
+}
+#recycle{
+    background-image: url('./recyclebinicon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    cursor: pointer;
+}
+#vscode{
+    background-image: url('./vscode.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 28px;
+    cursor: pointer;
+}
+#search{
+    background-image: url('./search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25px;
+    cursor: pointer;
+}
+#mail{
+    background-image: url('./mail.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 28px;
+}
+#calendar{
+    background-image: url('./calendar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#store{
+    background-image: url('./store.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#camera{
+    background-image: url('./camera.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#settings{
+    background-image: url('./settings.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#calculator{
+    background-image: url('./calculator.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#clock{
+    background-image: url('./clock.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#file{
+    background-image: url('./file.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+#video{
+    background-image: url('./video.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+}
+
+/* StartMenu */
+.startMenu{
+    position: absolute;
+    bottom: 55px;
+    height: 75vh;
+    width: 620px;
+    left: 600px;
+    border-radius: 2px;
+    background: rgb(215, 220, 223);
+    /* display: none ; */
+    transition: all 0.5s ease-out ;
+    padding: 20px;
+}
+.startMenu p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 545;
+}
+.recent_apps{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 40%;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    /* background: green; */
+    
+}
+.app{
+    width: 50px;
+    height: 50px;
+    /* background: green; */
+    margin: 0 30px;
+    cursor: pointer;
+    transition: height 0.4s ease-in-out;
+}
+.app:hover{
+    width: 40px;
+    height: 40px;
+}
+.app:nth-child(13):hover{
+    width: 40px ;
+    height: 50px;
+}
+
+.app p{
+    font-size: 13px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    margin-left: -9px;
+}
+.app:nth-child(8) p,
+.app:nth-child(9) p,
+.app:nth-child(10) p,
+.app:nth-child(11) p{
+    margin-left: -2px;
+}
+.recommended{
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background: #000; */
+}
+.recommended_app{
+    width: 48%;
+    height: 80px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.4s ease-out;
+    border-right: 5px;
+    /* background-color: blue; */
+}
+.recommended_app:hover{
+    background-color: #e0e0e0;
+}
+.recommended_app:active{
+    background-color: #c0c0c0;
+}
+.recommended_app :nth-child(1){
+    margin-right: 10px;
+}
+small{
+    color: #707070;
+}
+.footer{
+    padding-right: 20px;
+    background: #e0e0e0;
+    border-radius: 5px ;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.account{
+    width: 15%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px; 
+    cursor: pointer;
+    transition: background 0.2s ease-out;
+    
+}
+.account:active{
+    background: #d0d0d0ea;
+}
+.account > img{
+    width: 30px;
+    background-color: #d0d0d0 ;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.account p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 4px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.power_btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.power_btn img{
+    /* margin-top: 15px; */
+    background: #e0e0e0;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    transition: background 0s ease-out;
+    cursor: pointer;
+}
+.power_btn img:active{
+    background: #d0d0d0;
+}
+.power_btn small{
+    /* margin-top: -20px; */
+    color:#a0a0a0;
+}
