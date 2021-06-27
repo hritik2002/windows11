@@ -29,6 +29,12 @@ body{
     height: 50px;
     /* background: #000; */
 }
+.icon:active {
+    opacity: 0.5;
+}
+.app:active{
+    opacity: 0.7;
+}
 #menu{
     background-image: url('./favicon.ico');
     background-size: contain;
