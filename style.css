@@ -152,8 +152,8 @@ body{
     position: absolute;
     bottom: 55px;
     height: 75vh;
-    width: 620px;
-    left: 600px;
+    width: 40%;
+    left: 30%;
     border-radius: 2px;
     background: rgb(215, 220, 223);
     /* display: none ; */
@@ -172,7 +172,7 @@ body{
     align-items: flex-start;
     justify-content: space-between;
     height: 40%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-top: 5px;
     /* background: green; */
     
@@ -208,15 +208,18 @@ body{
     margin-left: -2px;
 }
 .recommended{
-    height: 40%;
+    height: 37%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
     /* background: #000; */
 }
 .recommended_app{
     width: 48%;
-    height: 80px;
+    height: 50px;
     margin-top: 5px;
     display: flex;
     align-items: center;
